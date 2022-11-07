@@ -14,7 +14,7 @@ export default function Header() {
     const [startDate, setStartDate] = useState(new Date());
     const [endDate, setEndDate] = useState(new Date());
     const [noOfGuests, setNoOfGuests] = useState(1);
-
+console.log(searchInput)
     const selectionRange = {
         startDate: startDate,
         endDate: endDate,
