@@ -10,7 +10,7 @@ export default function Banner() {
             />
             <div className='absolute top-1/2 w-full text-center'>
                 <p className='text-sm sm:text-lg '>Not sure where to go? Perfect.</p>
-                <button className='text-purple-500 bg-white px-10 py-4 rounded-full shadow-md mt-2 font-bold hover:shadow-xl hover:text-green-500 active:scale-90 transition duration-150'>I'm flexible</button>
+                <button className='text-purple-500 bg-white px-10 py-4 rounded-full shadow-md mt-2 font-bold hover:shadow-xl hover:text-green-500 active:scale-90 transition duration-150 hover:-translate-y-1 hover:scale-110'>I'm flexible</button>
             </div>
         </div>
     )
