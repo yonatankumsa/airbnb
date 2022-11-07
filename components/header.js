@@ -10,7 +10,7 @@ import { useState } from 'react'
 
 export default function Header() {
 
-    const [searchInput, setSearchInput] = useState("");
+    const [searchInput, setSearchInput] = useState("")
     const [startDate, setStartDate] = useState(new Date());
     const [endDate, setEndDate] = useState(new Date());
     const [noOfGuests, setNoOfGuests] = useState(1);
@@ -42,7 +42,9 @@ export default function Header() {
 
             {/* middle - search */}
             <div className="flex items-center md:border-2 rounded-full py-2 md:shadow-md sd:shadow hover:shadow-xl transition duration-250">
-        <input type="text" placeholder="Start Your Search" className="flex-grow pl-5 bg-transparent outline-none text-sm text-gray-600 placeholder-gray-400 "/>
+        <input value={searchInput} 
+        onChange={(e)=> setSearchInput(e.target.value)}
+        type="text" placeholder="Start Your Search" className="flex-grow pl-5 bg-transparent outline-none text-sm text-gray-600 placeholder-gray-400 "/>
         <SearchIcon className="hidden md:inline-flex h-8 bg-red-400 text-white rounded-full p-2 cursor-pointer md:mx-2 active:scale-90  transition duration-250"/>
       </div>
 
